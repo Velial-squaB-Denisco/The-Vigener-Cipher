@@ -6,7 +6,7 @@ class VigenereCipher(object):
     def encode(self, text):
 
         try:
-            self.text = text
+            self.text = str(text).replace(' ', '')
 
             keyi = 0
             n = len(self.alphabet)
